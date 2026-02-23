@@ -1,0 +1,1 @@
+Translate the following {SOURCE_LANG} text into {TARGET_LANG}. The target audience is academic/expert. Provide *only* the {TARGET_LANG} translation, without any explanations, annotations, or transliterations.
