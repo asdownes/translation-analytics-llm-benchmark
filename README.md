@@ -7,7 +7,8 @@ Minimal scripts for multi-language translation runs with local Ollama models, pl
 - `scripts/run_jobs_multi_lang.py`: run translation jobs across language pairs and models.
 - `run_translation_pipeline.sh`: main helper to run jobs across multiple local Ollama servers.
 - `scripts/analyze_efficiency.py`: generate efficiency plots from a run `stats.json`.
-- `run_efficiency_reports.sh`: batch analysis for `output/*` runs.
+- `run_efficiency_reports.sh`: batch analysis for run directories with `stats.json`.
+- `data/`: static benchmark source, outputs, and per-line metrics.
 
 ## Setup (Conda, recommended)
 
@@ -22,7 +23,7 @@ conda activate local-llm-translation
 
 ```bash
 ./run_translation_pipeline.sh -- \
-  --source-file path/to/source.txt \
+  --source-file data/1143_en.txt \
   --pair de --pair ru \
   --models "aya-expanse:32b,qwen2.5:32b" \
   --out-root output/local_run
@@ -32,37 +33,22 @@ conda activate local-llm-translation
 
 ```bash
 python scripts/run_jobs_multi_lang.py \
-  --source-file path/to/source.txt \
+  --source-file data/1143_en.txt \
   --pair de --pair ru \
   --models "gpt-5.2" \
   --out-root output/run1
 ```
 
-## Stats output (brief)
+## Data and output layout
 
-Each run writes `stats.json` to `<out-root>/stats.json` (unless `--no-stats` is used).
-It includes run metadata, totals, per-model/per-language aggregates, and per-task rows:
+The committed `data/` folder is static benchmark data, not the destination for new runs. It includes `1143_en.txt` plus translations to German, Japanese, Russian, and Simplified Chinese. `local_9_*_1143` contains nine local Ollama model runs per language; `gpt_5.2_all_pairs_1143` contains GPT-5.2 runs for all four languages.
 
-```json
-{
-  "source_file": "...",
-  "models": ["..."],
-  "total_tasks": 0,
-  "failed_lines": 0,
-  "model_stats": {"model_name": {"lines": 0, "failed_lines": 0}},
-  "lang_stats": {"de": {"lines": 0, "failed_lines": 0}},
-  "tasks": [
-    {
-      "model": "...",
-      "target_lang": "...",
-      "out_path": "...",
-      "metrics_path": "...",
-      "output_tokens_total": 0,
-      "prompt_tokens_total": 0
-    }
-  ]
-}
-```
+Generated `--out-root` directories use the same layout:
+
+- `<line_count>_<target_lang>_<model>_<prompt_id>.txt`: translated lines.
+- `metrics/*.jsonl`: per-line request status, text, token counts, timing, and raw provider metadata.
+- `thinking/*_thinking.jsonl`: captured reasoning summaries where available.
+- `stats.json`: run metadata, totals, per-model/per-language aggregates, and task paths.
 
 ## Analyze
 
