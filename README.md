@@ -2,6 +2,14 @@
 
 Minimal scripts for multi-language translation runs with local Ollama models, plus token-efficiency analysis.
 
+## Project Paper
+
+This repository contains the code associated with the project described in the paper *Translation Analytics for Freelancers II: Benchmarking Local LLMs for Confidential Translation Workflows* by Yuri Balashov, Rex VanHorn, Austin Downes, and Mingxi Xu (EAMT-2026, forthcoming).
+
+## Data Acknowledgment
+
+The Christopher & Dana Reeve Foundation Multilingual Corpus (RFMC) used for these benchmarking experiments is made available with permission from the Christopher & Dana Reeve Foundation for **non-commercial, academic research purposes only**. Please cite the associated paper if you use this dataset.
+
 ## What is here
 
 - `scripts/run_jobs_multi_lang.py`: run translation jobs across language pairs and models.
@@ -60,4 +68,20 @@ python scripts/analyze_efficiency.py \
 
 ```bash
 ./run_efficiency_reports.sh
+```
+
+## Citation
+
+```bibtex
+@inproceedings{balashov-etal-2026-translation,
+    title = "Translation Analytics for Freelancers {II}: Benchmarking Local {LLM}s for Confidential Translation Workflows",
+    author = "Balashov, Yuri  and
+      VanHorn, Rex  and
+      Downes, Austin  and
+      Xu, Mingxi",
+    booktitle = "Proceedings of the 26th Annual Conference of the European Association for Machine Translation",
+    year = "2026",
+    publisher = "European Association for Machine Translation (EAMT)",
+    note = "Forthcoming"
+}
 ```
