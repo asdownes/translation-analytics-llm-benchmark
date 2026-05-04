@@ -1,0 +1,225 @@
+{
+  "api_base": "https://api.openai.com/v1",
+  "api_mode": "responses",
+  "completed_lines": 4572,
+  "elapsed_seconds": 2169.4650866482407,
+  "error_lines": 0,
+  "failed_lines": 0,
+  "lang_stats": {
+    "de": {
+      "blank_lines": 0,
+      "elapsed": 1827.7849687431008,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "lines": 1143,
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 51349,
+      "over_limit_lines": 0,
+      "prompt_tokens_total": 79600,
+      "tasks": 1,
+      "token_estimate_lines": 0,
+      "wall_time_s_total": 1827.506953776814
+    },
+    "ja": {
+      "blank_lines": 0,
+      "elapsed": 2169.4589885855094,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "lines": 1143,
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 69998,
+      "over_limit_lines": 0,
+      "prompt_tokens_total": 79600,
+      "tasks": 1,
+      "token_estimate_lines": 0,
+      "wall_time_s_total": 2169.1798175070435
+    },
+    "ru": {
+      "blank_lines": 0,
+      "elapsed": 1866.7015744037926,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "lines": 1143,
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 53577,
+      "over_limit_lines": 0,
+      "prompt_tokens_total": 79600,
+      "tasks": 1,
+      "token_estimate_lines": 0,
+      "wall_time_s_total": 1866.3999988362193
+    },
+    "zh": {
+      "blank_lines": 0,
+      "elapsed": 1943.929506553337,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "lines": 1143,
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 53899,
+      "over_limit_lines": 0,
+      "prompt_tokens_total": 94459,
+      "tasks": 1,
+      "token_estimate_lines": 0,
+      "wall_time_s_total": 1943.6503942403942
+    }
+  },
+  "max_output_tokens": 8192,
+  "model_options": {
+    "gpt-5.2": {
+      "max_output_tokens": 8192
+    }
+  },
+  "model_prompt_overrides": {},
+  "model_stats": {
+    "gpt-5.2": {
+      "blank_lines": 0,
+      "elapsed": 7807.87503828574,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "lines": 4572,
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 228823,
+      "over_limit_lines": 0,
+      "prompt_tokens_total": 333259,
+      "tasks": 4,
+      "token_estimate_lines": 0,
+      "wall_time_s_total": 7806.737164360471
+    }
+  },
+  "models": [
+    "gpt-5.2"
+  ],
+  "options": {
+    "max_output_tokens": 8192,
+    "temperature": 0.0
+  },
+  "over_limit_lines": 0,
+  "pairs": [
+    {
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_path": "/mnt/nabu_main/austin/Projects/local_llm/main_prompt_template.txt",
+      "target_lang": "de"
+    },
+    {
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_path": "/mnt/nabu_main/austin/Projects/local_llm/main_prompt_template.txt",
+      "target_lang": "ru"
+    },
+    {
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_path": "/mnt/nabu_main/austin/Projects/local_llm/main_prompt_template.txt",
+      "target_lang": "ja"
+    },
+    {
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_path": "/mnt/nabu_main/austin/Projects/local_llm/main_prompt_template.txt",
+      "target_lang": "zh"
+    }
+  ],
+  "reasoning_effort": "high",
+  "reasoning_summary": null,
+  "skipped_tasks": 0,
+  "source_file": "1143_en.txt",
+  "source_lang": "en",
+  "tasks": [
+    {
+      "attempts_total": 1143,
+      "blank_lines": 0,
+      "elapsed": 1827.7849687431008,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "metrics_path": "output/multi_lang_openai/metrics/1143_de_gpt-5.2_p0.jsonl",
+      "model": "gpt-5.2",
+      "out_path": "output/multi_lang_openai/1143_de_gpt-5.2_p0.txt",
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 51349,
+      "over_limit_lines": 0,
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_tokens_total": 79600,
+      "request_count": 1143,
+      "target_lang": "de",
+      "thinking_path": "output/multi_lang_openai/thinking/1143_de_gpt-5.2_p0_thinking.jsonl",
+      "token_estimate_lines": 0,
+      "total_lines": 1143,
+      "wall_time_s_max": 18.212880433537066,
+      "wall_time_s_total": 1827.506953776814
+    },
+    {
+      "attempts_total": 1143,
+      "blank_lines": 0,
+      "elapsed": 1866.7015744037926,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "metrics_path": "output/multi_lang_openai/metrics/1143_ru_gpt-5.2_p0.jsonl",
+      "model": "gpt-5.2",
+      "out_path": "output/multi_lang_openai/1143_ru_gpt-5.2_p0.txt",
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 53577,
+      "over_limit_lines": 0,
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_tokens_total": 79600,
+      "request_count": 1143,
+      "target_lang": "ru",
+      "thinking_path": "output/multi_lang_openai/thinking/1143_ru_gpt-5.2_p0_thinking.jsonl",
+      "token_estimate_lines": 0,
+      "total_lines": 1143,
+      "wall_time_s_max": 8.854304493404925,
+      "wall_time_s_total": 1866.3999988362193
+    },
+    {
+      "attempts_total": 1143,
+      "blank_lines": 0,
+      "elapsed": 2169.4589885855094,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "metrics_path": "output/multi_lang_openai/metrics/1143_ja_gpt-5.2_p0.jsonl",
+      "model": "gpt-5.2",
+      "out_path": "output/multi_lang_openai/1143_ja_gpt-5.2_p0.txt",
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 69998,
+      "over_limit_lines": 0,
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_tokens_total": 79600,
+      "request_count": 1143,
+      "target_lang": "ja",
+      "thinking_path": "output/multi_lang_openai/thinking/1143_ja_gpt-5.2_p0_thinking.jsonl",
+      "token_estimate_lines": 0,
+      "total_lines": 1143,
+      "wall_time_s_max": 11.632316549308598,
+      "wall_time_s_total": 2169.1798175070435
+    },
+    {
+      "attempts_total": 1143,
+      "blank_lines": 0,
+      "elapsed": 1943.929506553337,
+      "error_lines": 0,
+      "failed_lines": 0,
+      "metrics_path": "output/multi_lang_openai/metrics/1143_zh_gpt-5.2_p0.jsonl",
+      "model": "gpt-5.2",
+      "out_path": "output/multi_lang_openai/1143_zh_gpt-5.2_p0.txt",
+      "output_tokens_est_total": 0,
+      "output_tokens_total": 53899,
+      "over_limit_lines": 0,
+      "prompt_id": "p0",
+      "prompt_label": "main_prompt_template",
+      "prompt_tokens_total": 94459,
+      "request_count": 1143,
+      "target_lang": "zh",
+      "thinking_path": "output/multi_lang_openai/thinking/1143_zh_gpt-5.2_p0_thinking.jsonl",
+      "token_estimate_lines": 0,
+      "total_lines": 1143,
+      "wall_time_s_max": 11.12391228042543,
+      "wall_time_s_total": 1943.6503942403942
+    }
+  ],
+  "token_estimate_lines": 0,
+  "total_lines": 4572,
+  "total_tasks": 4
+}
