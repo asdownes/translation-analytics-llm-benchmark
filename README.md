@@ -1,4 +1,4 @@
-# local-llm-translation
+# translation-analytics-llm-benchmark
 
 Minimal scripts for multi-language translation runs with local Ollama models, plus token-efficiency analysis.
 
