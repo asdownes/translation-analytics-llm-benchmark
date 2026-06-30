@@ -1,10 +1,6 @@
-# translation-analytics-llm-benchmark
-
-Minimal scripts for multi-language translation runs with local Ollama models, plus token-efficiency analysis.
-
 ## Project Paper
 
-This repository contains the code associated with the project described in the paper *Translation Analytics for Freelancers II: Benchmarking Local LLMs for Confidential Translation Workflows* by Yuri Balashov, Rex VanHorn, Austin Downes, and Mingxi Xu (EAMT-2026, forthcoming).
+This repository contains the code associated with the project described in the paper *Translation Analytics for Freelancers II: Benchmarking Local LLMs for Confidential Translation Workflows* by Yuri Balashov, Rex VanHorn, Mingxi Xu, and Austin Downes. The paper is available on arXiv and was accepted at EAMT-2026.
 
 ## Data Acknowledgment
 
@@ -73,15 +69,14 @@ python scripts/analyze_efficiency.py \
 ## Citation
 
 ```bibtex
-@inproceedings{balashov-etal-2026-translation,
-    title = "Translation Analytics for Freelancers {II}: Benchmarking Local {LLM}s for Confidential Translation Workflows",
-    author = "Balashov, Yuri  and
-      VanHorn, Rex  and
-      Downes, Austin  and
-      Xu, Mingxi",
-    booktitle = "Proceedings of the 26th Annual Conference of the European Association for Machine Translation",
-    year = "2026",
-    publisher = "European Association for Machine Translation (EAMT)",
-    note = "Forthcoming"
+@misc{balashov2026translationanalyticsfreelancersii,
+      title={Translation Analytics for Freelancers II: Benchmarking Local LLMs for Confidential Translation Workflows},
+      author={Yuri Balashov and Rex VanHorn and Mingxi Xu and Austin Downes},
+      year={2026},
+      eprint={2605.31452},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.31452},
+      note={Accepted at EAMT-2026 (Tilburg, Netherlands, June 2026)}
 }
 ```
